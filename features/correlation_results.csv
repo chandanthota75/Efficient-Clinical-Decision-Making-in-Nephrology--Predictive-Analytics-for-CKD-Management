@@ -1,0 +1,20 @@
+Feature,Type,Correlation Type,Value,Direction,Strength
+age,Numeric,pointbiserialr,0.23543342477093454,Positive association,Moderate
+bp,Numeric,pointbiserialr,0.30777977787428756,Positive association,Strong
+sg,Numeric,pointbiserialr,-0.6956760463047138,Negative association,Strong
+bgr,Numeric,pointbiserialr,0.42726247670428513,Positive association,Strong
+bu,Numeric,pointbiserialr,0.42498382920341843,Positive association,Strong
+sc,Numeric,pointbiserialr,0.3121937428518239,Positive association,Strong
+sod,Numeric,pointbiserialr,-0.3551252085595638,Negative association,Strong
+pot,Numeric,pointbiserialr,0.04411633788376975,Positive association,Weak
+hemo,Numeric,pointbiserialr,-0.7607961667458085,Negative association,Strong
+pcv,Numeric,pointbiserialr,-0.7090764225117683,Negative association,Strong
+pc,Categorical,Chi Square test with Cramers V,0.4226339215486911,Positive association,Strong
+pcc,Categorical,Chi Square test with Cramers V,0.28125961352999335,Positive association,Moderate
+ba,Categorical,Chi Square test with Cramers V,0.1847068573458108,Positive association,Moderate
+htn,Categorical,Chi Square test with Cramers V,0.6397523625901425,Positive association,Strong
+dm,Categorical,Chi Square test with Cramers V,0.620198841821398,Positive association,Strong
+cad,Categorical,Chi Square test with Cramers V,0.27600278301474435,Positive association,Moderate
+appet,Categorical,Chi Square test with Cramers V,0.4350119414859657,Negative association,Strong
+pe,Categorical,Chi Square test with Cramers V,0.41011168042434365,Positive association,Strong
+ane,Categorical,Chi Square test with Cramers V,0.35364072007233643,Positive association,Strong
