@@ -1,8 +1,8 @@
 Metric,Value
-True Negative,29
+True Negative,30
 False Positive,0
 False Negative,0
-True Positive,51
+True Positive,50
 Accuracy,1.0
 Misclassification rate,0.0
 Precision,1.0
