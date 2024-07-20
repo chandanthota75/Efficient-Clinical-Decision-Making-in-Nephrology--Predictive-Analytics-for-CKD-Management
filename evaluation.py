@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import matthews_corrcoef
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
@@ -6,7 +7,8 @@ from sklearn.metrics import roc_curve, auc, precision_recall_curve, average_prec
 import csv
 
 
-def eval_function_with_roc_plot(models, model_names, legend_names, colors_names, test_data, test_labels):
+def eval_function_with_roc_plot(models, model_names, legend_names, colors_names, test_data, test_labels,
+                                meta_predictions=None, test_features=None):
     curves = []
 
     for model_name in model_names:
@@ -16,6 +18,23 @@ def eval_function_with_roc_plot(models, model_names, legend_names, colors_names,
         if name == "SVM":
             model_prediction = model.predict(test_data)
             model_proba = model.decision_function(test_data)
+        elif name == "Bagging":
+            model_proba = np.round(model)
+            model_prediction = model_proba
+        elif name == "Voting Hard":
+            model_prediction = model.predict(test_data)
+            model_proba = model_prediction
+        elif name == "Blending":
+            model_prediction = model.predict(meta_predictions)
+            model_proba = model.predict_proba(meta_predictions)[:, 1]
+        elif name == "ANN":
+            model_proba = model.predict(test_features.reshape(test_features.shape[0], -1))
+            model_proba = np.where(model_proba > 0.5, 1, 0)
+            model_prediction = model_proba
+        elif name in ["SimpleRNN", "LSTM", "GRU"]:
+            model_proba = model.predict(test_features)
+            model_proba = np.where(model_proba > 0.5, 1, 0)
+            model_prediction = model_proba
         else:
             model_prediction = model.predict(test_data)
             model_proba = model.predict_proba(test_data)[:, 1]
@@ -88,6 +107,8 @@ def eval_function_with_roc_plot(models, model_names, legend_names, colors_names,
 
         # Append to respective lists
         if name in legend_names:
+            curves.append([model_fpr, model_tpr, colors_names[model_names.index(model_name)], name, model_auc])
+        elif name in legend_names:
             curves.append([model_fpr, model_tpr, colors_names[model_names.index(model_name)], name, model_auc])
 
     return curves
