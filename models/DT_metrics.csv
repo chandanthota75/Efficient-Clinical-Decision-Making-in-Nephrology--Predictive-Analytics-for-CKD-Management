@@ -1,14 +1,14 @@
 Metric,Value
-True Negative,29
-False Positive,1
-False Negative,0
-True Positive,50
-Accuracy,0.9875
-Misclassification rate,0.012499999999999956
-Precision,0.9803921568627451
-Recall,1.0
-F1 Measure,0.9900990099009901
-Specificity,0.9666666666666667
-MCC,0.973505222533836
-AUC,0.9833333333333334
-Precision-Recall AUC,0.9803921568627451
+True Negative,26
+False Positive,3
+False Negative,6
+True Positive,45
+Accuracy,0.8875
+Misclassification rate,0.11250000000000004
+Precision,0.9375
+Recall,0.8823529411764706
+F1 Measure,0.9090909090909091
+Specificity,0.896551724137931
+MCC,0.7643157063581784
+AUC,0.9617985125084517
+Precision-Recall AUC,0.9782119056773038
