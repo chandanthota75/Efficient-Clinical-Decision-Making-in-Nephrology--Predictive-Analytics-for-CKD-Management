@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Thota"
+  given-names: "Chandan"
+  orcid: "https://orcid.org/0009-0004-3459-0026"
+title: "Enhancing Clinical Decision Making in Nephrology: Predictive Analytics for CKD Management"
+version: 0.1.0
+doi: 10.5281/zenodo.1234
+date-released: 2024-05-23
+url: "https://doi.org/10.5281/zenodo.11262949"
