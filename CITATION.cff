@@ -1,9 +1,21 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
+- given-names: "Vairachilai"
+  family-names: "Shenbagavel"
+  orcid: "https://orcid.org/0000-0002-8577-6195"
+- given-names: "Shreyash"
+  family-names: "Jaiswal"
+  orcid: "https://orcid.org/0009-0005-7462-0602"
 - given-names: "Chandan"
   family-names: "Thota"
   orcid: "https://orcid.org/0009-0004-3459-0026"
+- given-names: "Periyanayagi"
+  family-names: "Shanmuga Sundram"
+  orcid: "https://orcid.org/0000-0001-6870-8214"
+- given-names: "Raja"
+  family-names: "Soosaimarian Peter Raj"
+  orcid: "https://orcid.org/0000-0002-7216-2207"
 title: "Enhancing Clinical Decision Making in Nephrology: Predictive Analytics for CKD Management"
 version: 0.1.0
 doi: 10.5281/zenodo.1234
